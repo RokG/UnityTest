@@ -48,7 +48,7 @@ public class ButtonClickREST : MonoBehaviour
         { 
             foreach (VillageInfo house in village)
             {
-                Debug.Log(house.address.zipcode);
+                coordinates = houseBase.transform.position;
                 coordinates.x = float.Parse(house.address.geo.lat);
                 coordinates.z = float.Parse(house.address.geo.lng);
             

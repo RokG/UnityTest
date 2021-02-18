@@ -118,7 +118,7 @@ public class CameraControl : MonoBehaviour
 
 
         // Make all canvases look at camera
-        GameObject[] houseDescription = GameObject.FindGameObjectsWithTag("HouseTag");
+        GameObject[] houseDescription = GameObject.FindGameObjectsWithTag("HouseCanvas");
         foreach (GameObject tag in houseDescription)
         {
             tag.transform.LookAt(target);
